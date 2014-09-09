@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="sampleTestSuite" parallel="false">
+
+    <test name="Selenium-Sample-Test" preserve-order="true" verbose="2">
+        <packages>
+            <package name="org.wso2.carbon.selenium.*"/>
+        </packages>
+    </test>
+
+</suite>
