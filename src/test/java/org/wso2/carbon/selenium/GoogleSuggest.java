@@ -1,6 +1,7 @@
 package org.wso2.carbon.selenium;
 
 
+    import com.saucelabs.selenium.client.factory.SeleniumFactory;
     import org.openqa.selenium.By;
     import org.openqa.selenium.WebDriver;
     import org.openqa.selenium.WebElement;
@@ -15,7 +16,7 @@ public class GoogleSuggest {
 
     @BeforeClass()
     public void testBefore(){
-        driver = new FirefoxDriver();
+        driver = SeleniumFactory.createWebDriver();
         driver.get("http://www.google.com/webhp?complete=1&hl=en");
     }
 

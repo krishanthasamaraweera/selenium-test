@@ -8,6 +8,19 @@
   <name>test-project-selenium</name>
   <url>http://maven.apache.org</url>
 
+  <repositories>
+      <repository>
+          <id>saucelabs-repository</id>
+          <url>https://repository-saucelabs.forge.cloudbees.com/release</url>
+          <releases>
+              <enabled>true</enabled>
+          </releases>
+          <snapshots>
+              <enabled>true</enabled>
+          </snapshots>
+      </repository>
+  </repositories>
+
   <build>
       <pluginManagement>
           <plugins>
@@ -35,6 +48,16 @@
           <groupId>org.seleniumhq.selenium</groupId>
           <artifactId>selenium-java</artifactId>
           <version>2.42.2</version>
+      </dependency>
+      <dependency>
+          <groupId>com.saucelabs.selenium</groupId>
+          <artifactId>sauce-ondemand-driver</artifactId>
+          <version>2.6</version>
+      </dependency>
+      <dependency>
+          <groupId>com.saucelabs.selenium</groupId>
+          <artifactId>selenium-client-factory</artifactId>
+          <version>2.6</version>
       </dependency>
   </dependencies>
 </project>
